@@ -6,6 +6,11 @@ using Discord.Interactions;
 using Discord.WebSocket;
 using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
+using OpenAI.GPT3;
+using OpenAI.GPT3.Interfaces;
+using OpenAI.GPT3.Managers;
+using OpenAI.GPT3.ObjectModels.RequestModels;
+using OpenAI.GPT3.ObjectModels;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -38,6 +43,9 @@ namespace DiscordBotNet6._0
 
         public async Task MainAsync()
         {
+            
+
+
             var services = ConfigureServices();
             //get services
             _client = services.GetRequiredService<DiscordSocketClient>();

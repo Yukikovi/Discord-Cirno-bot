@@ -14,10 +14,6 @@ namespace ConsoleApp1.Config
         public string Token { get; private set; }
         [JsonProperty("testGuild")]
         public ulong testGuildId { get; private set; }
-    }
-
-    public struct ConfigOpenAiJson
-    {
         [JsonProperty("api")]
         public string api { get; private set; }
     }
