@@ -6,6 +6,7 @@ using Discord.Interactions;
 using Discord.WebSocket;
 using Microsoft.Extensions.DependencyInjection;
 using Newtonsoft.Json;
+using Octokit;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -21,7 +22,7 @@ namespace DiscordBotNet6._0
     public class Program
     {
         public static Task Main(string[] args) => new Program().MainAsync();
-
+        public GitHubClient _gitHubClient { get; set; }
         public DiscordSocketClient _client { get; set; }
         public CommandService _command { get; set; }
         public InteractionService _interactionService { get; set; }
@@ -99,6 +100,7 @@ namespace DiscordBotNet6._0
                 .AddSingleton(new CommandService())
                 .AddSingleton<CommandHandler>()
                 .AddSingleton(x => new InteractionService(x.GetRequiredService<DiscordSocketClient>()))
+                .AddSingleton<GitHubClient>()
                 .BuildServiceProvider();
         }
 

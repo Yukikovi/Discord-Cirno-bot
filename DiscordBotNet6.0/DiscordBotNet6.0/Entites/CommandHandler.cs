@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Reflection;
 using Microsoft.Extensions.DependencyInjection;
 using Discord.Interactions;
+using Octokit;
 
 namespace ConsoleApp1.Entites
 {
