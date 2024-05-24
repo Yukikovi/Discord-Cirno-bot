@@ -94,7 +94,7 @@ namespace DiscordBotNet6._0
                     MessageCacheSize = 500,
                     LogLevel = LogSeverity.Info,
                     AlwaysDownloadUsers = true,
-                    GatewayIntents = GatewayIntents.MessageContent | GatewayIntents.AllUnprivileged
+                    GatewayIntents = GatewayIntents.MessageContent | GatewayIntents.AllUnprivileged | GatewayIntents.All
                 }))
                 .AddSingleton(new CommandService())
                 .AddSingleton<CommandHandler>()

@@ -46,6 +46,5 @@ namespace ConsoleApp1.Commands
             // reply with the answer
             await RespondAsync($"You asked: [**{question}**], and your answer is: [**{answer}**]");
         }
-       
     }
 }
