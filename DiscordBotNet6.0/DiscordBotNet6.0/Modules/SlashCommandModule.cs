@@ -1,9 +1,4 @@
 ﻿using ConsoleApp1.Entites;
-using OpenAI.GPT3;
-using OpenAI.GPT3.Interfaces;
-using OpenAI.GPT3.Managers;
-using OpenAI.GPT3.ObjectModels.RequestModels;
-using OpenAI.GPT3.ObjectModels;
 using Discord;
 using Discord.Commands;
 using Discord.Interactions;
